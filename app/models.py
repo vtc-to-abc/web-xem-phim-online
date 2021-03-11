@@ -13,8 +13,8 @@ class User(models.Model):
     created = models.DateTimeField(auto_now=True, verbose_name='Created on')
 
     class Meta:
-        verbose_name = 'User'
-        verbose_name_plural = 'Users'
+        verbose_name = 'Content User'
+        verbose_name_plural = 'Content Users'
 
     def __str__(self):
         return str(self.name)
@@ -178,8 +178,8 @@ class Report(models.Model):
     time = models.DateTimeField(auto_now=True, verbose_name='Reported At')
 
     class Meta:
-        verbose_name = 'Report'
-        verbose_name_plural = 'Reports'
+        verbose_name = "Content's Report"
+        verbose_name_plural = "Content's Reports"
 
     def __str__(self):
         pass
@@ -218,8 +218,8 @@ class WatchHistory(models.Model):
     time = models.DateTimeField(auto_now=True, verbose_name='watch time')
 
     class Meta:
-        verbose_name = 'history'
-        verbose_name_plural = 'histories'
+        verbose_name = "Content's watch history"
+        verbose_name_plural = "Content's watch histories"
 
     def __str__(self):
 
